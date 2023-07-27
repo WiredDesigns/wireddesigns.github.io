@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Hide any overflow to prevent the background from showing outside the viewport */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .bg {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(60deg, #036ffc, #a503fc, #ba03fc);
+    background-size: 200% 200%;
+    backdrop-filter: blur(10px); /* Use backdrop-filter instead of filter */
+    animation: gradient-animation 20s ease-in-out infinite alternate both;
+  }
+  
+  @keyframes gradient-animation {
+    0% { background-position: right top; }
+    50% { background-position: left bottom; }
+    100% { background-position: right top; }
+  }
+  
+  
+  .navbar {
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    height: fit-content;
+  
+  }
+  
+  .navbar h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #036ffc; /* Optional color for the text */
+  }
+  
+  
+  
+  .squared-box {
+    width: 400px;
+    min-height: 250px; /* Adjust the min-height based on your content */
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    filter: blur(0px);
+    padding-bottom: 80px; /* Add padding at the bottom to accommodate social buttons */
+  }
+  
+
+  .logo {
+    top: 10px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .astrous-text {
+    margin-top: 20px; /* Add margin to create space between the logo and "Astrous" text */
+  }
+  
+  .squared-box h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px; /* Add margin at the bottom */
+    filter: blur(0px);
+    margin-top: 90px;
+  }
+  
+  .squared-box p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px; /* Add margin at the bottom to create space between "Astrous" text and the paragraph */
+  }
+  
+
+  
+  a.mystuffbutton {
+  background: linear-gradient(to right, #196BCA, #6433E0);
+  background-color: #196BCA;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.mystuffbutton span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(0deg);
+  flex: 1; /* Take up all available space */
+}
+
+a.mystuffbutton:hover {
+  background: linear-gradient(to right, #5482d0, #7d5ee3);
+  background-color: #5482d0;
+}
+
+a.mystuffbutton:active {
+  transform: scale(0.95);
+}
+  
+  .logo {
+    position: absolute;
+    top: 10px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+  
+
+
+
+  .socials {
+    position: absolute;
+    bottom: 10px; /* Adjust this value to position the social buttons properly */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .social-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease; /* Add transition for smooth shrinking effect */
+  }
+  
+  .social-button i {
+    font-size: 24px;
+    text-decoration: none;
+  }
+  .social-button {
+    text-decoration: none;
+  }
+
+  .social-button.youtube {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  
+  .social-button.spotify {
+    background-color: #1db954;
+    color: #fff;
+  }
+  
+  .social-button.twitter {
+    background-color: #1da1f2;
+    color: #fff;
+  }
+  
+  /* Add hover effect */
+  .social-button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Add click effect */
+  .social-button:active {
+    transform: scale(0.95);
+  }
+
+
+
+
+
+
+
+  .footer {
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    height: fit-content;
+    z-index: 2; /* Ensure the footer is above other content */
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #036ffc; /* Optional color for the text */
+  }
+  
