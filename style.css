@@ -236,3 +236,45 @@ a.mystuffbutton:active {
     color: #036ffc; /* Optional color for the text */
   }
   
+
+
+
+
+
+
+
+
+
+  @media (max-width: 768px) {
+    .squared-box {
+      width: 80%; /* Adjust the width to fit better on smaller screens */
+    }
+  
+    .squared-box h1 {
+      font-size: 20px; /* Decrease font size for better fit */
+      margin-top: 60px; /* Adjust the top margin to fit the content */
+    }
+  
+    .squared-box p {
+      font-size: 16px; /* Decrease font size for better fit */
+      margin-bottom: 15px; /* Adjust the bottom margin to fit the content */
+    }
+  
+    a.mystuffbutton {
+      font-size: 16px; /* Decrease font size for better fit */
+      padding: 10px 15px; /* Adjust padding for better button size */
+    }
+  
+    .socials {
+      bottom: 15px; /* Adjust the position of social buttons to avoid overlap */
+    }
+  
+    .social-button {
+      width: 40px; /* Decrease the size of social buttons */
+      height: 40px;
+      font-size: 20px; /* Increase font size for better readability */
+    }
+  
+    .footer {
+      font-size: 12px; /* Decrease font size for better fit */
+    
